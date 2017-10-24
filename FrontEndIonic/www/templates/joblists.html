@@ -1,0 +1,11 @@
+<ion-view view-title="Profile">
+  <ion-content >
+      
+    <ion-list>
+      <ion-item ng-repeat="joblist in joblists" ng-click="doIt(joblist.title)">
+          <!--</ion-ite> href="#/app/playlists/{{playlist.name}}">-->
+        {{joblist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

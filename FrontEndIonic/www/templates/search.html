@@ -1,0 +1,83 @@
+<ion-view view-title="Sign Up">
+
+<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+  <ion-content ng-controller="SignupController">
+      
+    <div class="list">
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">First Name</span>
+			<input type="text" placeholder="John" ng-model="fname">
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Last Name</span>
+			<input type="text" placeholder="Suhr" ng-model="lname">
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Email</span>
+			<input type="text" placeholder="john@suhr.com" ng-model="email">
+		</label>
+		<!--<ion-list>
+		  <ion-radio ng-model="gender" ng-value="'M'" selected>Male</ion-radio>
+		  <ion-radio ng-model="gender" ng-value="'F'">Female</ion-radio>
+		</ion-list>-->
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  State
+		</div>
+		<select ng-model="state">
+		<option ng-repeat="state in statelist" value="{{state.title}}">{{state.title}}</option>
+		</select>
+	  </label>
+        
+        
+        
+        
+        <label class="item item-input item-select">
+		<div class="input-label">
+		  City
+		</div>
+		<select ng-model="city">
+		<option ng-repeat="city in cityList">{{city.title}}</option>
+            </select>
+	  </label>
+	  <!--<label class="item item-input item-select">
+		<div class="input-label">
+		  City
+		</div>
+		<select>
+			<option>Abohar</option>
+			<option>Ajnala</option> 
+			<option>Amritsar</option>
+			<option>Balachaur</option> 
+			<option>Barnala</option> 
+			<option>Batala</option> 
+			<option>Bathinda</option> 
+			<option>Chandigarh</option> 
+			<option>Dasua</option> 
+			<option>Dinanagar</option> 
+			<option>Faridkot</option> 
+			<option>Fatehgarh Sahib</option> 
+			<option>Fazilka</option> 
+			<option>Ferozepur</option> 
+			<option>Garhashanker</option> 
+			<option>Goindwal</option> 
+			<option>Gurdaspur</option> 
+			<option>Guruharsahai</option> 
+			<option>Hoshiarpur</option> 
+			<option>Jagraon</option> 
+			<option>Jalandhar</option> 
+			<option>Jugial</option> 
+			<option>Kapurthala</option> 
+			<option>Kharar</option> 
+			<option>Kotkapura</option> 
+			<option>Ludhiana</option> 
+			<option>Malaut</option> 
+			<option>Malerkotla</option> 
+			<option>Mansa</option> 
+			<option>Moga</option> 
+		</select>
+	  </label>-->
+	  <button class="button button-block button-positive" type="submit" ng-click="insertData()">Save</button>
+  </ion-content>
+</ion-view>

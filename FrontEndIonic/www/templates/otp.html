@@ -1,0 +1,55 @@
+
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">otp</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content ng-controller="myctrl4">
+    <form >
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Enter OTP</span>
+          <input type="text" ng-model="otp1">
+        </label>
+     <!--   <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label> -->
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click="getData1()">Go</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
+
+
+
+
+
+
+
+
+
+<!--otp code-->
+
+<!--<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="page1s.js"></script>
+<body ng-app="myApp">
+
+
+  <div  ng-controller="myctrl4">
+        <form>
+            OTP:-<input type="text" ng-model="otp1" />
+            <input type="button" value="Submit" ng-click="getData1()" />
+        </form>
+    </div> 
+ 
+    
+</div>
+
+</body>
+</html>-->

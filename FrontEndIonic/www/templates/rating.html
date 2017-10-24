@@ -1,0 +1,25 @@
+<ion-view view-title="Rating">
+
+<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+  <ion-content>
+      
+    <div class="list">
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Worker Number</span>
+			<input type="text">
+		</label>
+		<label>
+		<div class="list">
+		  <div class="item range range-positive">
+			0<input type="range" min="0" max="5" value="3" ng-model="rating">5
+		  </div>
+		</div>
+		</label>
+		<label>
+		<center><h4>Rating given: {{rating}}</h4></center>
+		</label>
+	  <button class="button button-block button-positive" type="submit">Save</button>
+	  </div>
+  </ion-content>
+</ion-view>

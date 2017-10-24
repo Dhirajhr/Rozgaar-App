@@ -1,0 +1,29 @@
+<ion-view view-title="Profile">
+  <ion-content >
+      
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" ng-click="doIt(playlist.name)">
+          <!--</ion-ite> href="#/app/playlists/{{playlist.name}}">-->
+        {{playlist.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+
+
+
+<!--
+<div ng-controller="myctrl">
+    Search:<input type="text" ng-model="abc"/><br><br>
+    <div>
+        <ul>
+            <li ng-repeat="x in names | filter:abc">{{x.id}}</li>
+        </ul>
+      
+    </div>
+  
+    
+</div>
+
+ass-->

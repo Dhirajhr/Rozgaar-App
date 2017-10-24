@@ -1,0 +1,46 @@
+<ion-view view-title="Job Profile">
+
+  <ion-content>
+ 
+      <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+	
+    <div class="list">
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Job Title</span>
+			<input type="text" placeholder="Decribe job in one line" ng-model="title">
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Field</span>
+			<span class="input-label" ng-init="init()">{{field}}</span>
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Budget (Rs.)</span>
+			<input type="number" ng-model="budget">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Duration of Job (Days)</span>
+			<input type="number" ng-model="duration">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Expiration date of Job</span>
+			<input type="date" ng-model="lastdate">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Vacancy</span>
+			<input type="number" ng-model="vacancy">
+		</label>
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  City
+		</div>
+		<select ng-model="city">
+		<option ng-repeat="city in cityList">{{city.title}}</option>
+            </select>
+	  </label>
+	  <label class="item item-input item-stacked-label">
+			<span class="input-label">Address</span>
+			<input type="text" ng-model="address">
+		</label>
+	  <button class="button button-block button-positive" type="submit" ng-click="insertData()">Post</button>
+  </ion-content>
+</ion-view>
